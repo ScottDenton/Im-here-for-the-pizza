@@ -1,5 +1,5 @@
 def decipher(a, b, message)
-  hash = {}
+  hash = {' ' => ' '}
   b = b.split('')
    a.chars.each do |c|
     hash[c] = b.shift
