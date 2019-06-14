@@ -7,3 +7,6 @@ lines=ARGF.read.split("\n")
 # def hello(str)
 #    str.reverse
 # end
+
+
+# Question 2
