@@ -12,8 +12,8 @@ def fib(l,n)
   return 1 if n <= l
   # return fib(n-1) + fib(n-2)
   total = 0
-  (1..(l.to_i)).each do |i|
-    total += (fib((l.to_i), (n.to_i) - i.to_i))
+  (1..(l)).each do |i|
+    total += (fib((l), (n) - i))
   end
   total
 end
@@ -28,5 +28,5 @@ lines.each do |line|
   # puts l
   n = line.split(' ')[1]
   # puts n
-  puts fib(l,n)
+  puts fib(l.to_i,n.to_i)
 end
