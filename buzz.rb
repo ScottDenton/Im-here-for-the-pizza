@@ -2,11 +2,10 @@ def fizzbuzz(num1, word1, num2, word2, input)
   # p input
   input.each do |i|
     i = i.to_i
-    puts i
     if i % num1.to_i == 0 && i.to_i % num2.to_i == 0
       puts word1 + ' ' + word2
     elsif i % num1.to_i == 0
-      puts word1
+       puts word1
     elsif i % num2.to_i == 0
       puts word2
     else
